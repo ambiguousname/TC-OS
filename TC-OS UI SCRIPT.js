@@ -26,7 +26,7 @@ function getCommand(){
             documentOpen();
             break;
         case 'mpia':
-            window.open("https://output.jsbin.com/yejoxoxexo");
+            window.open("about:blank").innerHTML = "<script src = \"TC-OS MPIA.js\"></script>";
             break;
         case 'rps':
             var choice = prompt("rock, paper, or scissors?");
