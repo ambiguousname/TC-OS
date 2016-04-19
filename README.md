@@ -11,3 +11,4 @@ TC-OS is a program that allows you to do tasks your everyday computer would do. 
 1. Download the file as a zip file.
 2. Extract the files into a new folder.
 3. Open the TC-OS UI Home.html file. Then you'll get a tutorial. Type in commands exactly as spelled, and remember: it's case sensitive. So don't use capital letters when typing in commands.
+4. If there are any problems, put it down as an issue in the issues section of the TC-OS github.
