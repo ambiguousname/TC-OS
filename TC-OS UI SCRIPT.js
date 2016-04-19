@@ -1,14 +1,12 @@
 documents = [];
 applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the TC-OS MPIA" , " rps | Play rock paper scissors" , " "];
 function startTCOS(){
-    document.innerHTML = document.innerHTML + "<style>body{cursor:progress;}</style>";
     full = document.getElementById("full");
-    full.innerHTML = "<textarea id = \"input\" rows = \"20\" cols = \"40\"><\/textarea><p id = \"output\"><\/p>";
+    full.innerHTML = "<textarea id = \"input\" rows = \"10\" cols = \"20\"><\/textarea><p id = \"output\"><\/p>";
     input = document.getElementById("input");
     output = document.getElementById("output");
     output.innerHTML = "Welcome to TC-OS UI! This is a user friendly version of TC-OS. It\'s much simpler than the previous TC-OS. To start, let\'s type in tutorial. Just type in: \"tutorial\". Nothing more, nothing less.";
     input.addEventListener("input",getCommand);
-    document.innerHTML = document.innerHTML + "<style>body{cursor:progress;}</style>";
 }
 function getCommand(){
     switch(input.value){
