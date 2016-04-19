@@ -1,4 +1,6 @@
 # TC-OS
+
+[![Join the chat at https://gitter.im/Tyly04/TC-OS](https://badges.gitter.im/Tyly04/TC-OS.svg)](https://gitter.im/Tyly04/TC-OS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 TC-OS is a program that is something you should never ever use. Really. It's designed to be crappy. The C in TC-OS stands for Crappy. Seriously, stay away from this.
 
 However, if you really want to use TC-OS, we have to cover a couple of things:
