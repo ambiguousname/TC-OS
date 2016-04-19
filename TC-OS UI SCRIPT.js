@@ -59,20 +59,12 @@ switch(choice){
             alert("Tied! Scissors can't beat scissors!");
         }
         break;
-        default:
-        alert("Sorry, I couldn't understand.");
-        break;
-}
-            break;
-            case'calculator':
-                
+            default:
+                    alert("Sorry, I couldn't understand.");
                 break;
-    }
 }
-function calculate(){
-    var equate = prompt("Please enter in your equation.");
-    //So what? Eval is useful. And I need it in this context.
-    output.innerHTML = eval(equate);
+        break;
+    }
 }
 function numberGuess(){
     numberTutorial = document.getElementById("numberTutorial").value;
