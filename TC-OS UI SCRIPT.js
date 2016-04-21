@@ -1,5 +1,5 @@
 documents = [];
-applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the TC-OS MPIA" , " rps | Play rock paper scissors" , " "];
+applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the TC-OS MPIA" , " rps | Play rock paper scissors" , " ggg | Play the TC-OS \"Good Graphics Game\""];
 function startTCOS(){
     full = document.getElementById("full");
     full.innerHTML = "<textarea id = \"input\" rows = \"10\" cols = \"20\"><\/textarea><p id = \"output\"><\/p>";
@@ -63,6 +63,9 @@ switch(choice){
                     window.alert("Sorry, I couldn't understand.");
                 break;
 }
+        break;
+    case 'ggg':
+        window.open("https://output.jsbin.com/xiguwi");
         break;
     }
 }
