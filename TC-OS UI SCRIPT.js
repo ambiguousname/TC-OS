@@ -1,8 +1,8 @@
 documents = [];
-applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the TC-OS MPIA" , " rps | Play rock paper scissors" , " "];
+applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the releases page for the TC-OS MPIA" , " rps | Play rock paper scissors" , " ggg | Play the TC-OS \"Good Graphics Game\""];
 function startTCOS(){
     full = document.getElementById("full");
-    full.innerHTML = "<textarea id = \"input\"><\/textarea><p id = \"output\"><\/p>";
+    full.innerHTML = "<textarea id = \"input\" rows = \"10\" cols = \"20\"><\/textarea><p id = \"output\"><\/p>";
     input = document.getElementById("input");
     output = document.getElementById("output");
     output.innerHTML = "Welcome to TC-OS UI! This is a user friendly version of TC-OS. It\'s much simpler than the previous TC-OS. To start, let\'s type in tutorial. Just type in: \"tutorial\". Nothing more, nothing less.";
@@ -26,7 +26,7 @@ function getCommand(){
             documentOpen();
             break;
         case 'mpia':
-            window.open("https://output.jsbin.com/yejoxoxexo");
+            window.open("https://github.com/BinaryByte/TC-OS-MPIA/releases");
             break;
         case 'rps':
             var choice = prompt("rock, paper, or scissors?");
@@ -34,35 +34,38 @@ var computer = Math.floor(Math.random() * 3);
 switch(choice){
     case 'rock':
         if(computer === 2){
-            alert("Computer wins! Paper beats rock!");
+            window.alert("Computer wins! Paper beats rock!");
         } else if (computer === 1){
-            alert("Tied! Rock can't beat rock!");
+            window.alert("Tied! Rock can't beat rock!");
         } else {
-            alert("You win! Rock beats scissors!");
+            window.alert("You win! Rock beats scissors!");
         }
         break;
     case 'paper':
         if(computer === 2){
-            alert("Tied! Paper can't beat paper!");
+            window.alert("Tied! Paper can't beat paper!");
         } else if (computer === 1) {
-            alert("You win! Paper covers rock!");
+            window.alert("You win! Paper covers rock!");
         } else {
-            alert("Computer wins! Scissors cuts paper!");
+            window.alert("Computer wins! Scissors cuts paper!");
         }
         break;
     case 'scissors':
         if(computer === 2){
-            alert("You win! Scissors cut paper!");
+            window.alert("You win! Scissors cut paper!");
         } else if (computer === 1){
-            alert("Computer wins! Rock crushes scissors!");
+            window.alert("Computer wins! Rock crushes scissors!");
         } else {
-            alert("Tied! Scissors can't beat scissors!");
+            window.alert("Tied! Scissors can't beat scissors!");
         }
         break;
             default:
-                    alert("Sorry, I couldn't understand.");
+                    window.alert("Sorry, I couldn't understand.");
                 break;
 }
+        break;
+    case 'ggg':
+        window.open("https://output.jsbin.com/xiguwi");
         break;
     }
 }
@@ -90,15 +93,15 @@ function saveDocument(){
     output.innerHTML = "Your document has been saved. <b>Your save slot is: " + cake + ".</b> Press <button onClick = \"documentOpen()\">here</button> to go back.";
 }
 function openDoc(){
-    i = prompt("What was the save slot you were given?");
+    i = window.prompt("What was the save slot you were given?");
     output.innerHTML = documents[i] + " <button onClick = \"documentOpen()\">Go back</button>";
 }
 function documentEdit(){
-    i = prompt("What was the save slot you were given?");
+    i = window.prompt("What was the save slot you were given?");
     output.innerHTML = "<textarea id = \"documentArea\">" + documents[i] +"</textarea><input type = \"submit\" onClick = \"saveDocumentEdit()\"></input>";
 }
 function printDoc(){
-    i = prompt("What was the save slot you were given?");
+    i = window.prompt("What was the save slot you were given?");
     documentPrintWindow = window.open("","MsgWindow","width = 200","height = 1000");
     documentPrintWindow.document.write(documents[i]);
     documentPrintWindow.print();
