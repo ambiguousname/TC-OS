@@ -1,5 +1,5 @@
 documents = [];
-applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the TC-OS MPIA" , " rps | Play rock paper scissors" , " ggg | Play the TC-OS \"Good Graphics Game\""];
+applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the releases page for the TC-OS MPIA" , " rps | Play rock paper scissors" , " ggg | Play the TC-OS \"Good Graphics Game\""];
 function startTCOS(){
     full = document.getElementById("full");
     full.innerHTML = "<textarea id = \"input\" rows = \"10\" cols = \"20\"><\/textarea><p id = \"output\"><\/p>";
@@ -26,7 +26,7 @@ function getCommand(){
             documentOpen();
             break;
         case 'mpia':
-            window.open("https://output.jsbin.com/yejoxoxexo");
+            window.open("https://github.com/BinaryByte/TC-OS-MPIA/releases");
             break;
         case 'rps':
             var choice = prompt("rock, paper, or scissors?");
