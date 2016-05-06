@@ -1,5 +1,5 @@
 documents = [];
-applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the releases page for the TC-OS MPIA" , " rps | Play rock paper scissors" , " ggg | Play the TC-OS \"Good Graphics Game\""];
+applicationList = ["tutorial | The Tutorial"," tutorialNumber | Asks you for a number, then displays the number" , " browser | You can browse the web" , " documents | Open up the document window" , " mpia | Open the releases page for the TC-OS MPIA" , " rps | Play rock paper scissors" , " ggg | Play the TC-OS \"Good Graphics Game\"", "name generator | Open up the name generator to geneerate names"];
 function startTCOS(){
     full = document.getElementById("full");
     full.innerHTML = "<textarea id = \"input\" rows = \"10\" cols = \"20\"><\/textarea><p id = \"output\"><\/p>";
@@ -66,6 +66,9 @@ switch(choice){
         break;
     case 'ggg':
         window.open("https://output.jsbin.com/xiguwi");
+        break;
+    case 'name generator':
+        window.open("http://output.jsbin.com/quboze");
         break;
     }
 }
